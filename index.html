@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="background">
@@ -16,11 +17,9 @@
         </div>
     </div>
     <div id="container-of-form">
-        <p>
+        <p class="intro">
             This not a real online service! You know you need something<br>like thid in your life to help you realize your deepest dreams.<br>Sign up now to get started<br><br>You know you want to.
-        </p>
-        <p>
-            Let's do this
+            <br><br><br>Let's do this
         </p>
         <form action="" method="post">
             <fieldset name="names">
@@ -29,32 +28,32 @@
                     <input type="text" id="firstName" placeholder="Thor" name="firstName" required>
                 </div>
                 <div>
-                    <label for="LastName">Last NAME</label>
+                    <label for="LastName">LAST NAME</label>
                     <input type="text" id="LastName" placeholder="Odinson" name="LastName" required>
                 </div>
             </fieldset>
             <fieldset name="contacts">
                 <div>
                     <label for="mail">EMAIL</label>
-                    <input type="email" name="email" id="mail" pattern="" required>
+                    <input type="text" name="email" id="mail" minlength="3" required>
                 </div>
                 <div>
                     <label for="telephone">PHONE NUMBER</label>
-                    <input type="tel" name="telephone" id="telephone" pattern="" required>
+                    <input type="tel" name="telephone" id="telephone" maxlength="10" required>
                 </div>
             </fieldset>
-            <fieldset name="Passeords">
+            <fieldset name="Passwords">
                 <div>
                     <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password" pattern="" required>
+                    <input type="password" name="password" id="password" minlength="8" required class="error">
                 </div>
                 <div>
                     <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" name="co-password" id="confirm-password" pattern="" required>
+                    <input type="password" name="co-password" id="confirm-password" minlength="8" class="error" required>
                 </div>
             </fieldset>
+            <button type="submit">Create Account</button>
         </form>
-        <button type="submit">Create Account</button>
         <p>Already have an account? <span>Log in</span></p>
     </div>
 </body>

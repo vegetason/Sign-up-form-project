@@ -1,7 +1,3 @@
-*{
-    border: 1px solid blue;
-    box-sizing: border-box;
-}
 body{
     height: 100vh;
     width: auto;
@@ -17,7 +13,7 @@ body{
     background-size: cover;
 }
 #container-of-form{
-    height: 100vh;
+    height: auto;
     width: 70vw;
     display: flex;
     flex-direction: column;
@@ -28,11 +24,13 @@ fieldset{
     display: flex;
     gap: 100px;
     width: auto;
+    padding-bottom: 20px;
+    border: 0px;
 }
 fieldset >div{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     margin-top: 20px;
 }
 form{
@@ -49,10 +47,10 @@ button{
     height: 50px;
     width: 250px;
     align-self: flex-start;
-}
-#container-of-form p{
-    align-self: flex-start;
-    width: auto;
+    margin-top: 10px;
+    margin-left: 100px;
+    background-color: #2d5c03;
+    border-radius: 15px;
 }
 #logo{
     font-family: 'Norse', sans-serif;
@@ -64,5 +62,49 @@ button{
     background-color: rgba(0,0,0,0.5);
     font-weight: bolder;
 }
-#logo img,#logo span{
+.intro{
+    width: auto;
+    height: auto;
+    font-size:xx-large;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+label,input{
+    font-size: large;
+}
+form +p{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+form fieldset:nth-last-child(2){
+    border-bottom: 1px solid black;
+}
+input:focus{
+    border: 1px solid blue;
+    box-shadow: 5px 5px 10px black;
+}
+button:hover{
+    box-shadow: 3px 4px 10px black;
+}
+#container-of-form :last-child{
+    font-size: 20px;
+}
+p >span{
+    color: #2d5c03;
+    font-weight: bold;
+}
+#container-of-form p+p{
+    margin-top: 30px;
+}
+@media(prefers-color-scheme: dark) {
+    #container-of-form{
+        background-color:rgba(0,0,0,1);
+        color: aliceblue;
+    }
+    input:focus{
+        border: 1px solid pink;
+        box-shadow: 5px 5px 10px #2d5c03;
+    }
+    button:hover{
+        box-shadow: 3px 4px 10px #2d5c03;
+    }
 }
