@@ -1,0 +1,68 @@
+*{
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: auto;
+    padding-top: 0px;
+    margin: 0px;
+    display: flex;
+}
+#background{
+    height: 100vh;
+    width: 30vw;
+    background-image: url('https://rb.gy/b76duz');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container-of-form{
+    height: 100vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 150px;
+}
+fieldset{
+    display: flex;
+    gap: 100px;
+    width: auto;
+}
+fieldset >div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+}
+button{
+    height: 50px;
+    width: 250px;
+    align-self: flex-start;
+}
+#container-of-form p{
+    align-self: flex-start;
+    width: auto;
+}
+#logo{
+    font-family: 'Norse', sans-serif;
+    font-size: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    background-color: rgba(0,0,0,0.5);
+    font-weight: bolder;
+}
+#logo img,#logo span{
+}

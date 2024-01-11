@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Form</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet">
+</head>
+<body>
+    <div id="background">
+        <div id="logo">
+            <img src="https://rb.gy/fqqr4y" alt="Odin Logo" width="auto" height="100px">
+            <span id="odin">Odin</span>
+        </div>
+    </div>
+    <div id="container-of-form">
+        <p>
+            This not a real online service! You know you need something<br>like thid in your life to help you realize your deepest dreams.<br>Sign up now to get started<br><br>You know you want to.
+        </p>
+        <p>
+            Let's do this
+        </p>
+        <form action="" method="post">
+            <fieldset name="names">
+                <div>
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" id="firstName" placeholder="Thor" name="firstName" required>
+                </div>
+                <div>
+                    <label for="LastName">Last NAME</label>
+                    <input type="text" id="LastName" placeholder="Odinson" name="LastName" required>
+                </div>
+            </fieldset>
+            <fieldset name="contacts">
+                <div>
+                    <label for="mail">EMAIL</label>
+                    <input type="email" name="email" id="mail" pattern="" required>
+                </div>
+                <div>
+                    <label for="telephone">PHONE NUMBER</label>
+                    <input type="tel" name="telephone" id="telephone" pattern="" required>
+                </div>
+            </fieldset>
+            <fieldset name="Passeords">
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" pattern="" required>
+                </div>
+                <div>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" name="co-password" id="confirm-password" pattern="" required>
+                </div>
+            </fieldset>
+        </form>
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <span>Log in</span></p>
+    </div>
+</body>
+</html>
