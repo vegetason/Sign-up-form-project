@@ -1,5 +1,6 @@
+
 body{
-    height: 100vh;
+    height: auto;
     width: auto;
     padding-top: 0px;
     margin: 0px;
@@ -13,7 +14,7 @@ body{
     background-size: cover;
 }
 #container-of-form{
-    height: auto;
+    height: 100vh;
     width: 70vw;
     display: flex;
     flex-direction: column;
@@ -95,7 +96,7 @@ p >span{
 #container-of-form p+p{
     margin-top: 30px;
 }
-@media(prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
     #container-of-form{
         background-color:rgba(0,0,0,1);
         color: aliceblue;
@@ -106,5 +107,202 @@ p >span{
     }
     button:hover{
         box-shadow: 3px 4px 10px #2d5c03;
+    }
+}*/
+@media (max-width:1280px){
+    fieldset{
+        display: flex;
+        gap: 50px;
+        width: auto;
+        padding-bottom: 20px;
+        border: 0px;
+    }
+    #background{
+        width: 40vw;
+        height: auto;
+        height: auto;
+    }
+    #container-of-form{
+        width: 60vw;
+    }
+    .intro{
+        width: auto;
+        height: auto;
+        font-size:x-large;
+    }
+}
+@media (max-width:1024px){
+    fieldset{
+        display: flex;
+        gap: 20px;
+        width: auto;
+        padding-bottom: 20px;
+        border: 0px;
+    }
+    #logo{
+        font-size: 75px;
+        font-family: 'Norse', sans-serif;
+        margin-top: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro{
+        width: auto;
+        height: auto;
+        font-size:larger;
+    }
+    input{
+        height: 30px;
+        width: 250px;
+        border-radius: 5px;
+    }
+    #background{
+        width: 40vw;
+    }
+    #container-of-form{
+        width: 60vw;
+    }
+}
+@media (max-width:412px){
+    fieldset{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        width: auto;
+        padding-bottom: 20px;
+        border: 0px;
+    }
+    #logo{
+        font-size: 75px;
+        font-family: 'Norse', sans-serif;
+        margin-top: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro{
+        width: auto;
+        height: auto;
+        font-size:larger;
+    }
+    input{
+        height: 30px;
+        width: 250px;
+        border-radius: 5px;
+    }
+    #background{
+        display: none;
+    }
+    #container-of-form{
+        width: 100vw;
+        height: auto;
+        padding-left: 20px;
+        color: white;
+    }
+    button{
+        height: 50px;
+        width: 250px;
+        align-self: flex-start;
+        margin-top: 10px;
+        margin-left: 10px;
+        background-color: #2d5c03;
+        border-radius: 15px;
+    }
+    #container-of-form :last-child{
+        font-size: 20px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    button:hover{
+        box-shadow: 3px 4px 10px white;
+    }
+    input:focus{
+        border: 1px solid #2d5c03;
+        box-shadow: 5px 5px 10px white;
+    }
+    fieldset >div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+}
+@media (max-width:912px){
+    fieldset{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        width: auto;
+        padding-bottom: 20px;
+        border: 0px;
+        align-items: center;
+    }
+    #logo{
+        font-size: 75px;
+        font-family: 'Norse', sans-serif;
+        margin-top: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro{
+        width: auto;
+        height: auto;
+        font-size:larger;
+    }
+    input{
+        height: 30px;
+        width: 250px;
+        border-radius: 5px;
+    }
+    #background{
+        display: none;
+    }
+    #container-of-form{
+        width: 100vw;
+        height: auto;
+        background-image: url('https://rb.gy/b76duz');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 20px;
+        color: white;
+        text-align: center;
+        font-weight: 500;
+    }
+    button{
+        height: 50px;
+        width: 250px;
+        margin-top: 10px;
+        background-color: #2d5c03;
+        border-radius: 15px;
+        align-self: center;
+    }
+    #container-of-form :last-child{
+        font-size: 20px;
+        margin-left: 0px;
+    }
+    button:hover{
+        box-shadow: 3px 4px 10px white;
+    }
+    input:focus{
+        border: 1px solid #2d5c03;
+        box-shadow: 5px 5px 10px white;
+    }
+    fieldset >div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+}
+@media (max-width:280px){
+    input{
+        width: 200px;
+    }
+    #container-of-form :last-child{
+        font-size: 15px;
     }
 }
