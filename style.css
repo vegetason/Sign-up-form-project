@@ -173,6 +173,7 @@ input:valid{
     }
     #container-of-form{
         width: 60vw;
+        height: 100vh;
     }
 }
 @media (max-width:412px){
