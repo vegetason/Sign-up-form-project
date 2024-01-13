@@ -5,9 +5,10 @@ body{
     padding-top: 0px;
     margin: 0px;
     display: flex;
+    box-sizing: border-box;
 }
 #background{
-    height: 100vh;
+    height: auto;
     width: 30vw;
     background-image: url('https://rb.gy/b76duz');
     background-repeat: no-repeat;
@@ -43,6 +44,7 @@ input{
     height: 30px;
     width: 300px;
     border-radius: 5px;
+    border: 2px solid #E5E7EB;
 }
 button{
     height: 50px;
@@ -76,12 +78,14 @@ form +p{
     margin-left: 100px;
     margin-top: 10px;
 }
-form fieldset:nth-last-child(2){
+form{
     border-bottom: 1px solid black;
+    box-shadow: 2px 3px 5px black;
+    padding-bottom: 5px;
 }
 input:focus{
-    border: 1px solid blue;
-    box-shadow: 5px 5px 10px black;
+    border: 2px solid blue;
+    box-shadow: 5px 5px 10px blue;
 }
 button:hover{
     box-shadow: 3px 4px 10px black;
@@ -96,7 +100,13 @@ p >span{
 #container-of-form p+p{
     margin-top: 30px;
 }
-/*@media (prefers-color-scheme: dark) {
+label::after{
+    content: '*';
+}
+input:valid{
+    border: 2px solid #2d5c03;
+}
+@media (prefers-color-scheme: dark) {
     #container-of-form{
         background-color:rgba(0,0,0,1);
         color: aliceblue;
@@ -108,7 +118,7 @@ p >span{
     button:hover{
         box-shadow: 3px 4px 10px #2d5c03;
     }
-}*/
+}
 @media (max-width:1280px){
     fieldset{
         display: flex;
@@ -119,11 +129,11 @@ p >span{
     }
     #background{
         width: 40vw;
-        height: auto;
-        height: auto;
+        height: 100vh;
     }
     #container-of-form{
         width: 60vw;
+        height: auto;
     }
     .intro{
         width: auto;
@@ -159,6 +169,7 @@ p >span{
     }
     #background{
         width: 40vw;
+        height: auto;
     }
     #container-of-form{
         width: 60vw;
@@ -209,7 +220,7 @@ p >span{
         background-color: #2d5c03;
         border-radius: 15px;
     }
-    #container-of-form :last-child{
+    #container-of-form:last-child{
         font-size: 20px;
         margin-left: 0px;
         text-align: center;
@@ -230,6 +241,19 @@ p >span{
     }
 }
 @media (max-width:912px){
+    .intro::before{
+        display: block;
+        font-family: 'Norse', sans-serif;
+        font-size: 100px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0,0,0,0.5);
+        font-weight: bolder;
+        content: 'odin';
+        margin-bottom: 30px;
+        margin-right: 10px;
+    }
     fieldset{
         display: flex;
         gap: 20px;
@@ -262,7 +286,7 @@ p >span{
     }
     #container-of-form{
         width: 100vw;
-        height: auto;
+        height: max(auto,100vh);
         background-image: url('https://rb.gy/b76duz');
         background-repeat: no-repeat;
         background-size: cover;
@@ -297,6 +321,11 @@ p >span{
         gap: 10px;
         margin-top: 20px;
     }
+    form{
+        border-bottom: 1px solid white;
+        box-shadow: 2px 3px 5px white;
+        padding-bottom: 5px;
+    }
 }
 @media (max-width:280px){
     input{
@@ -304,5 +333,13 @@ p >span{
     }
     #container-of-form :last-child{
         font-size: 15px;
+    }
+}
+@media (min-height:1180px){
+    #container-of-form{
+        height: 100vh;
+    }
+    #background{
+        height: auto;
     }
 }

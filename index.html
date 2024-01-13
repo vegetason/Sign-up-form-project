@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="background">
@@ -21,7 +21,7 @@
             This not a real online service! You know you need something<br>like thid in your life to help you realize your deepest dreams.<br>Sign up now to get started<br><br>You know you want to.
             <br><br><br>Let's do this
         </p>
-        <form action="" method="post">
+        <form action="">
             <fieldset name="names">
                 <div>
                     <label for="firstName">FIRST NAME</label>
@@ -35,11 +35,11 @@
             <fieldset name="contacts">
                 <div>
                     <label for="mail">EMAIL</label>
-                    <input type="text" name="email" id="mail" minlength="3" required>
+                    <input type="email" name="email" id="mail" minlength="3" required>
                 </div>
                 <div>
                     <label for="telephone">PHONE NUMBER</label>
-                    <input type="tel" name="telephone" id="telephone" maxlength="10" required>
+                    <input type="tel" name="telephone" id="telephone" minlength="13" required>
                 </div>
             </fieldset>
             <fieldset name="Passwords">
@@ -52,7 +52,7 @@
                     <input type="password" name="co-password" id="confirm-password" minlength="8" class="error" required>
                 </div>
             </fieldset>
-            <button type="submit">Create Account</button>
+            <button type="submit" id="btn">Create Account</button>
         </form>
         <p>Already have an account? <span>Log in</span></p>
     </div>
