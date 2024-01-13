@@ -129,7 +129,7 @@ input:valid{
     }
     #background{
         width: 40vw;
-        height: 100vh;
+        height: auto;
     }
     #container-of-form{
         width: 60vw;
@@ -287,7 +287,7 @@ input:valid{
     }
     #container-of-form{
         width: 100vw;
-        height: max(auto,100vh);
+        height:auto;
         background-image: url('https://rb.gy/b76duz');
         background-repeat: no-repeat;
         background-size: cover;
@@ -341,6 +341,6 @@ input:valid{
         height: 100vh;
     }
     #background{
-        height: auto;
+        height:auto;
     }
 }
