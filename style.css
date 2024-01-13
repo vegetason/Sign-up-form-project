@@ -133,12 +133,15 @@ input:valid{
     }
     #container-of-form{
         width: 60vw;
-        height: auto;
+        height: 100vh;
     }
     .intro{
         width: auto;
         height: auto;
         font-size:x-large;
+    }
+    input{
+        width: 250px;
     }
 }
 @media (max-width:1024px){
@@ -336,7 +339,7 @@ input:valid{
         font-size: 15px;
     }
 }
-@media (min-height:1180px){
+@media (min-width:1280px){
     #container-of-form{
         height: 100vh;
     }
